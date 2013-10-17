@@ -1,5 +1,5 @@
 
-var querystring = require('querystring');
+var stringify = require('querystring').stringify;
 
 
 /**
@@ -19,7 +19,5 @@ module.exports = mailto;
  */
 
 function mailto (email, options) {
-  var url = 'mailto:' + email;
-  if (options) url += '?' + querystring.stringify(options);
-  window.location = url;
+  window.location = 'mailto:' + email + '?' + stringify(options || {});
 }
