@@ -1,0 +1,15 @@
+{
+  "name": "mailto",
+  "repo": "ianstormtaylor/mailto",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Programmatically open the user's email client.",
+  "keywords": ["mailto", "email", "send", "subject", "body", "address"],
+  "dependencies": {
+    "component/querystring": "*"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "scripts": ["index.js"]
+}
